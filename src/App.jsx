@@ -12,7 +12,7 @@ function App() {
       <Typography
         sx={{ textAlign: "center", mt: 2, fontWeight: "bold" }}
         color="primary"
-        variant="h2"
+        variant="h3"
       >
         Pomodoro App
       </Typography>

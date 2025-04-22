@@ -7,25 +7,38 @@ import CardActionArea from "@mui/material/CardActionArea";
 import PendingActionsIcon from "@mui/icons-material/PendingActions";
 import CoffeeMakerIcon from "@mui/icons-material/CoffeeMaker";
 import LocalDiningIcon from "@mui/icons-material/LocalDining";
+import { lightBlue } from "@mui/material/colors";
 
 const cards = [
   {
     id: 1,
-    title: "Focus",
+    title: (
+      <Typography variant="h5" sx={{ color: "#FFACAC", fontWeight: "bold" }}>
+        Focus
+      </Typography>
+    ),
     description: "....Minutes.",
-    icon: <PendingActionsIcon color="secondary" />,
+    icon: <PendingActionsIcon sx={{ color: "#FFACAC", mr: 1 }} />,
   },
   {
     id: 2,
-    title: "Short Breaks",
+    title: (
+      <Typography variant="h5" sx={{ color: "#B2BAFA", fontWeight: "bold" }}>
+        Short Break
+      </Typography>
+    ),
     description: "....Minutes.",
-    icon: <CoffeeMakerIcon />,
+    icon: <CoffeeMakerIcon sx={{ color: "#B2BAFA", mr: 1 }} />,
   },
   {
     id: 3,
-    title: "Longs Breaks",
+    title: (
+      <Typography variant="h5" sx={{ color: "#868EBD", fontWeight: "bold" }}>
+        Long Break
+      </Typography>
+    ),
     description: "....Minutes",
-    icon: <LocalDiningIcon />,
+    icon: <LocalDiningIcon sx={{ color: "#868EBD", mr: 1 }} />,
   },
 ];
 
@@ -41,7 +54,7 @@ function Cardlist() {
             mb: 2,
             display: "flex",
             alignItems: "center",
-            backgroundColor: "",
+            borderRadius: "16px",
           }}
         >
           <CardActionArea
@@ -50,7 +63,7 @@ function Cardlist() {
             sx={{
               height: "100%",
               "&[data-active]": {
-                backgroundColor: "primary.main",
+                backgroundColor: lightBlue[900],
                 "&:hover": {
                   backgroundColor: "action.selectedHover",
                 },
@@ -58,9 +71,9 @@ function Cardlist() {
             }}
           >
             <CardContent>
-              <Typography variant="h5">
+              <Box sx={{ display: "flex", alignItems: "center" }}>
                 {card.icon} {card.title}
-              </Typography>
+              </Box>
               <Typography variant="body1">{card.description}</Typography>
             </CardContent>
           </CardActionArea>

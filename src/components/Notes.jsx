@@ -22,7 +22,7 @@ const NotesSection = () => {
           Notes
         </Typography>
         <TextField
-          placeholder="Label................."
+          placeholder="Tuliskan fokus atau gangguanmu disini..."
           multiline
           rows={4}
           fullWidth

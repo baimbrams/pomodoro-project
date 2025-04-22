@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "@mui/material/Button";
-import SendIcon from "@mui/icons-material/Send";
 import RestartAltIcon from "@mui/icons-material/RestartAlt";
+import IconButton from "@mui/material/IconButton";
 import { Box } from "@mui/material";
 
 const CustomButton = () => {
@@ -15,14 +15,16 @@ const CustomButton = () => {
         margin: 2,
       }}
     >
-      <Button variant="contained" color="primary" startIcon={<SendIcon />}>
-        Mulai
-      </Button>
       <Button
+        sx={{ width: "250px", fontSize: "20px" }}
         variant="contained"
-        color="error"
-        startIcon={<RestartAltIcon />}
-      ></Button>
+        color="primary"
+      >
+        Start
+      </Button>
+      <IconButton color="#919498" aria-label="add an alarm">
+        <RestartAltIcon fontSize="large" />
+      </IconButton>
     </Box>
   );
 };
