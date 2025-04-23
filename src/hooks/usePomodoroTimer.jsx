@@ -61,15 +61,16 @@ export const usePomodoroTimer = (initialMode = "focus") => {
 
   // Play / pause audio
   useEffect(() => {
-    if (audioRef.current) {
-      if (isRunning && isSoundOn) {
-        audioRef.current
-          .play()
-          .catch((err) => console.warn("Audio play error:", err));
-      } else {
-        audioRef.current.pause();
-      }
+    if (!audioRef.current) return;
+
+    if (isRunning && isSoundOn) {
+      audioRef.current
+        .play()
+        .catch((err) => console.warn("Audio play error:", err));
+      return;
     }
+
+    audioRef.current.pause();
   }, [isRunning, isSoundOn]);
 
   // Start timer

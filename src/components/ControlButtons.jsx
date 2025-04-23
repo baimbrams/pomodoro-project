@@ -18,23 +18,33 @@ const ControlButtons = ({
       margin: 2,
     }}
   >
-    <IconButton color="default" aria-label="toggle sound" onClick={toggleSound}>
+    <IconButton
+      color="default"
+      aria-label="toggle sound"
+      onClick={toggleSound}
+      sx={{ fontSize: { xs: "1.5rem", sm: "2rem" } }}
+    >
       {isSoundOn ? "🔊" : "🔇"}
     </IconButton>
 
     <Button
       sx={{
-        width: "250px",
+        width: "350px",
         fontSize: "20px",
         bgcolor: isRunning ? "#9e9e9e" : "primary.main",
       }}
       variant="contained"
       onClick={isRunning ? stop : start}
     >
-      {isRunning ? "Stop" : "Start"}
+      {isRunning ? "Pause" : "Start"}
     </Button>
 
-    <IconButton color="default" aria-label="reset timer" onClick={reset}>
+    <IconButton
+      color="default"
+      aria-label="reset timer"
+      onClick={reset}
+      sx={{ fontSize: { xs: "1.5rem", sm: "2rem" }, mt: { xs: 1, sm: 0 } }}
+    >
       <RestartAltIcon fontSize="large" />
     </IconButton>
   </Box>

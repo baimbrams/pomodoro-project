@@ -14,10 +14,10 @@ const NotesSection = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        marginBottom: 4,
+        margin: "16px",
       }}
     >
-      <Box sx={{ width: "100%", maxWidth: 600, margin: 2 }}>
+      <Box sx={{ width: "100%", maxWidth: 600, margin: "16px" }}>
         <Typography variant="h5" fontWeight="bold" color="primary" mb={1}>
           Notes
         </Typography>

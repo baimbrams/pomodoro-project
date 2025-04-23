@@ -1,12 +1,32 @@
-# React + Vite
+# SRIN UI/UX Team Test - 2025 UX Engineer  
+## 🎯 Pomodoro Productivity App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Halo tim SRIN! 👋  
+Repository ini berisi hasil pengerjaan tes UX Engineer 2025 berupa aplikasi _Pomodoro Timer_ berbasis React. Fokus utama dalam pengerjaan ini adalah menciptakan antarmuka yang sederhana, intuitif, dan fungsional untuk membantu pengguna meningkatkan produktivitas kerja.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Fitur Utama
 
-## Expanding the ESLint configuration
+- ⏱️ **Pomodoro Timer**: Hitung mundur waktu kerja (25 menit default).
+- 🍃 **Break Session**: Mempunyai feature Break dan Long Break.
+- ▶️ **Start / Reset Button**: Kontrol sederhana tanpa distraksi.
+- 🎵 **Focus Music**: Pemutar musik lo-fi/bGM ringan untuk membantu meningkatkan konsentrasi.
+- 🎨 **Responsive UI**: Didukung Material UI untuk tampilan yang bersih dan fleksibel di berbagai perangkat.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🖥️ Tech Stack
+
+- **React.js** – Library utama untuk membangun UI interaktif.
+- **Material UI** – Utilitas styling modern untuk desain cepat dan konsisten.
+- **Vite** – Development tool modern untuk React dengan build yang super cepat.
+
+---
+
+## 🚀 Cara Menjalankan
+
+1. Clone repo ini:
+   ```bash
+   git clone https://github.com/baimbrams/pomodoro-project.git
+   cd pomodoro-project

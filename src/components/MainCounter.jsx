@@ -61,11 +61,32 @@ const MainLayout = () => {
         Pomodoro App
       </Typography>
 
-      <Box sx={{ display: "flex", justifyContent: "center", marginBottom: 2 }}>
-        <TimerDisplay formattedTime={formattedTime} />
-      </Box>
+      <TimerDisplay formattedTime={formattedTime} />
 
-      <Box sx={{ display: "flex", justifyContent: "center", gap: 2 }}>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: {
+            xs: "column",
+            sm: "row",
+          },
+          justifyContent: {
+            xs: "center",
+            sm: "center",
+          },
+          alignItems: {
+            xs: "center",
+            sm: "stretch",
+          },
+          gap: {
+            xs: 1,
+            sm: 2,
+            md: 3,
+          },
+          flexWrap: "wrap",
+          margin: "16px",
+        }}
+      >
         {modeOptions.map(({ label, title, color, Icon }) => (
           <ModeCard
             key={label}

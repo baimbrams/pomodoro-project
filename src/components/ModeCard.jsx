@@ -7,19 +7,19 @@ import {
   Typography,
 } from "@mui/material";
 
-const cardStyles = {
-  width: 300,
-  mb: 2,
-  display: "flex",
-  alignItems: "center",
-  borderRadius: "16px",
-};
-
 const actionAreaStyles = (isActive) => ({
   height: "100%",
   backgroundColor: isActive ? "#01579b" : "inherit",
   "&:hover": {
     backgroundColor: isActive ? "action.selectedHover" : "action.hover",
+  },
+  paddingY: {
+    xs: 1,
+    sm: 2,
+  },
+  paddingX: {
+    xs: 2,
+    sm: 3,
   },
 });
 
@@ -32,7 +32,22 @@ const ModeCard = ({
   time,
   onClick,
 }) => (
-  <Card sx={cardStyles}>
+  <Card
+    sx={{
+      width: {
+        xs: "100%",
+        sm: 250,
+        md: 300,
+      },
+      mb: {
+        xs: 1,
+        sm: 2,
+      },
+      display: "flex",
+      alignItems: "center",
+      borderRadius: "16px",
+    }}
+  >
     <CardActionArea onClick={onClick} sx={actionAreaStyles(isActive)}>
       <CardContent>
         <Box sx={{ display: "flex", alignItems: "center" }}>
