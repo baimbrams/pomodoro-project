@@ -23,10 +23,3 @@ Repository ini berisi hasil pengerjaan tes UX Engineer 2025 berupa aplikasi _Pom
 - **Vite** – Development tool modern untuk React dengan build yang super cepat.
 
 ---
-
-## 🚀 Cara Menjalankan
-
-1. Clone repo ini:
-   ```bash
-   git clone https://github.com/baimbrams/pomodoro-project.git
-   cd pomodoro-project
